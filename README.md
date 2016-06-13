@@ -19,3 +19,5 @@
        "style": ["stylus", "sass"],
    }
 ```
+## License
+basic-webpack-boilerplate is licensed under [The MIT License](LICENSE).

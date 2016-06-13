@@ -3,8 +3,10 @@
    "version": "0.0.1",
    "description": "Basic Webpack Boilerplate",
    "author": "Gersom Alaja",
+   "license": "MIT",
+   "homepage": "https://github.com/Gersom/basic-webpack-boilerplate/",
    "repository": {
       "type": "git",
-      "url": "https://github.com/Gersm/basic-webpack-boilerplate.git"
+      "url": "https://github.com/Gersom/basic-webpack-boilerplate.git"
    }
 }
