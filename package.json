@@ -6,8 +6,5 @@
    "repository": {
       "type": "git",
       "url": "https://github.com/Gersm/basic-webpack-boilerplate.git"
-   },
-   "dependencies": {
-      "webpack": "^1.13.1",
-   },
+   }
 }
