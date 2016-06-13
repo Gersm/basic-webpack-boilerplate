@@ -1,5 +1,5 @@
 # Basic Webpack Boilerplate
-   * ES6 to transform SS5
+   * ES6 to transform ES5
    * Include CSS
    * Structure folders:
 ```json
