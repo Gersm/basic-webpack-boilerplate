@@ -1,12 +1,15 @@
 {
-   "name": "basic-webpack-boilerplate",
-   "version": "0.0.1",
-   "description": "Basic Webpack Boilerplate",
-   "author": "Gersom Alaja",
-   "license": "MIT",
-   "homepage": "https://github.com/Gersom/basic-webpack-boilerplate/",
-   "repository": {
-      "type": "git",
-      "url": "https://github.com/Gersom/basic-webpack-boilerplate.git"
-   }
+  "name": "basic-webpack-boilerplate",
+  "version": "0.0.1",
+  "description": "Basic Webpack Boilerplate",
+  "author": "Gersom Alaja",
+  "license": "MIT",
+  "homepage": "https://github.com/Gersom/basic-webpack-boilerplate/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gersom/basic-webpack-boilerplate.git"
+  },
+  "dependencies": {
+    "webpack": "^1.13.1"
+  }
 }
