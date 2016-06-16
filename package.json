@@ -5,11 +5,32 @@
   "author": "Gersom Alaja",
   "license": "MIT",
   "homepage": "https://github.com/Gersom/basic-webpack-boilerplate/",
+  "main": "dist/main.js",
+  "bugs": {"email": "gersomalaja@gmail.com"},
+  "keywords": [
+    "alaja",
+    "babel",
+    "basic",
+    "boilerplate",
+    "edit",
+    "gersom",
+    "gersomalaja",
+    "webpack"
+  ],
+  "scripts": {
+    "dev": "webpack --config config/webpack.config.dev.js",
+    "watch": "webpack --watch --config config/webpack.config.dev.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Gersom/basic-webpack-boilerplate.git"
   },
   "dependencies": {
     "webpack": "^1.13.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0"
   }
 }
