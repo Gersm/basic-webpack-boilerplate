@@ -19,5 +19,16 @@
        "style": ["stylus", "sass"],
    }
 ```
+
+## Installation
+
+```bash
+git clone https://github.com/Gersom/basic-webpack-boilerplate.git
+cd basic-webpack-boilerplate
+npm install
+npm run dev # compiled files
+npm run watch # compiled watch files
+```
+
 ## License
 basic-webpack-boilerplate is licensed under [The MIT License](LICENSE).
