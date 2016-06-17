@@ -1,1 +1,5 @@
-console.log('app loading...!');
+() => {
+   let menssage = 'app loading...!';
+
+   console.log(menssage);
+}

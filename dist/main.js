@@ -44,8 +44,13 @@
 /* 0 */
 /***/ function(module, exports) {
 
-	console.log('app loading...!');
+	'use strict';
 
+	(function () {
+	   var menssage = 'app loading...!';
+
+	   console.log(menssage);
+	});
 
 /***/ }
 /******/ ]);
