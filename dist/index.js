@@ -70,8 +70,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./main.css", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./main.css");
+			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/stylus-loader/index.js!./main.styl", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/stylus-loader/index.js!./main.styl");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -89,7 +89,7 @@
 
 
 	// module
-	exports.push([module.id, "body{\r\n   background: #444;\r\n   color: #eee;\r\n   font-family: sans-serif;\r\n}\r\n", ""]);
+	exports.push([module.id, "body {\n  background: #444;\n  color: #eee;\n  font-family: sans-serif;\n}\n", ""]);
 
 	// exports
 

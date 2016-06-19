@@ -1,7 +1,12 @@
-() => {
-   let menssage = 'app loading...!';
+// Require
+   require('./main.css'); // Css
+   // require('./main.styl'); // Stylus
+   // require('./main.scss'); // Sass
 
-   console.log(menssage);
-}
 
-require('./main.css');
+// coding
+   () => {
+      let menssage = 'app loading...!';
+
+      console.log(menssage);
+   }
