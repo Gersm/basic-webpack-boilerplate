@@ -46,13 +46,17 @@
 
 	'use strict';
 
+	// Require
+	__webpack_require__(1); // Css
+	// require('./ui/index.styl'); // Stylus
+	// require('./ui/index.scss'); // Sass
+
+	// coding
 	(function () {
 	   var menssage = 'app loading...!';
 
 	   console.log(menssage);
 	});
-
-	__webpack_require__(1);
 
 /***/ },
 /* 1 */
@@ -70,8 +74,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/stylus-loader/index.js!./main.styl", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/stylus-loader/index.js!./main.styl");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./index.css", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./index.css");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -89,7 +93,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  background: #444;\n  color: #eee;\n  font-family: sans-serif;\n}\n", ""]);
+	exports.push([module.id, "body{\r\n   background: #444;\r\n   color: #eee;\r\n   font-family: sans-serif;\r\n}\r\n", ""]);
 
 	// exports
 
