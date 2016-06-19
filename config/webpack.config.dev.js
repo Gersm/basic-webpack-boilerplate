@@ -22,6 +22,10 @@ module.exports = {
             exclude: /node_modules/,
             loader: 'style-loader!css-loader'
          },{
+            test: /\.styl$/,
+            exclude: /node_modules/,
+            loader: 'style-loader!css-loader!stylus-loader'
+         },{
             test: /\.scss$/,
             exclude: /node_modules/,
             loader: 'style-loader!css-loader!sass-loader'
