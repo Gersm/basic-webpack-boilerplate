@@ -4,7 +4,7 @@
 // config
 module.exports = {
    entry: {
-      main: './src/app.js'
+      index: './src/app.js'
    },
    output: {
       path: path.join(__dirname, '..', 'dist'),
@@ -17,6 +17,11 @@ module.exports = {
             test: /\.js$/,
             exclude: /node_modules/,
             loader: 'babel-loader'
+         },
+         {
+            test: /\.css$/,
+            exclude: /node_modules/,
+            loader: 'style-loader!css-loader'
          }
       ]
    }

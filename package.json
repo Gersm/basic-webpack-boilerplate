@@ -6,7 +6,9 @@
   "license": "MIT",
   "homepage": "https://github.com/Gersom/basic-webpack-boilerplate/",
   "main": "dist/main.js",
-  "bugs": {"email": "gersomalaja@gmail.com"},
+  "bugs": {
+    "email": "gersomalaja@gmail.com"
+  },
   "keywords": [
     "alaja",
     "babel",
@@ -26,6 +28,8 @@
     "url": "https://github.com/Gersom/basic-webpack-boilerplate.git"
   },
   "dependencies": {
+    "css-loader": "^0.23.1",
+    "style-loader": "^0.13.1",
     "webpack": "^1.13.1"
   },
   "devDependencies": {
