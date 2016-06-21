@@ -1,6 +1,7 @@
 // Imports
    var path = require('path');
    var ExtractTextPlugin = require('extract-text-webpack-plugin');
+   var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 // config
 module.exports = {
@@ -10,7 +11,7 @@ module.exports = {
    output: {
       path: path.join(__dirname, '..', 'dist'),
       filename: '[name].js',
-      publicPath: '/dist/'
+      publicPath: './'
    },
    module: {
       loaders: [
@@ -19,21 +20,30 @@ module.exports = {
             exclude: /node_modules/,
             loader: 'babel-loader'
          },{
+            test: /\.jade/,
+            exclude: /node_modules/,
+            loader: "jade"
+         },{
             test: /\.css$/,
             exclude: /node_modules/,
-            loader: ExtractTextPlugin.extract("style-loader", "css-loader!autoprefixer-loader")
+            loader: ExtractTextPlugin.extract('style-loader', 'css-loader!autoprefixer-loader')
          },{
             test: /\.styl$/,
             exclude: /node_modules/,
-            loader: ExtractTextPlugin.extract("style-loader","css-loader!autoprefixer-loader!stylus-loader")
+            loader: ExtractTextPlugin.extract('style-loader', 'css-loader!autoprefixer-loader!stylus-loader')
          },{
             test: /\.scss$/,
             exclude: /node_modules/,
-            loader: ExtractTextPlugin.extract("style-loader","css-loader!autoprefixer-loader!sass-loader")
+            loader: ExtractTextPlugin.extract('style-loader', 'css-loader!autoprefixer-loader!sass-loader')
          }
       ]
    },
 	plugins: [
-		new ExtractTextPlugin("main.css")
+		new ExtractTextPlugin("main.css"),
+      new HtmlWebpackPlugin({
+         filename: 'index.html',
+         showErrors: true,
+         template: './src/index.jade'
+      })
 	]
 };
